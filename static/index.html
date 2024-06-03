@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Illuminatex Drive</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="all-files-tab" class="active">All Files</a></li>
+                <li><a href="#" id="upload-file-tab">Upload File</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="all-files-content" class="tab-content active">
+            <div id="files-container"></div>
+        </section>
+        <section id="upload-file-content" class="tab-content">
+            <label for="folder-select">Select Folder:</label>
+            <select id="folder-select">
+                <option value="root">Root Directory</option>
+            </select>
+            <button id="upload-file-btn">Upload File</button>
+        </section>
+    </main>
+    <div id="create-folder-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create Folder</h2>
+            <input type="text" id="folder-name" placeholder="Folder Name">
+            <button id="create-folder-submit">Create</button>
+        </div>
+    </div>
+    <div class="file-card">
+        <h3>Lolka.png</h3>
+        <p>Size: 10 mb</p>
+        <p>Created: 20:22</p>
+        <button>Download</button>
+        <button>Delete</button>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
