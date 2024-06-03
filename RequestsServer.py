@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException, UploadFile, File, Response
 from fastapi.responses import FileResponse
 from FileManager import FileManager
 from fastapi.staticfiles import StaticFiles
+from DataOfServer import DataServer
 
 app = FastAPI()
 file_manager = FileManager()
@@ -26,6 +27,10 @@ def get_all_files(response: Response):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+
+@app.get("/dataofmemory")
+def data_of_server(response: Response):
+    return DataServer().GetData()
 
 if __name__ == "__main__":
     import uvicorn
