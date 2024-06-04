@@ -94,3 +94,4 @@ class FileManager:
             logger.warning(f"File {file_path} not found.")
             return False
 
+# ...
