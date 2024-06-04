@@ -19,3 +19,4 @@ class File:
             file_size = f"{self.__FileSize} байт"
         return file_size
 
+# ...
