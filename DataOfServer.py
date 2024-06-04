@@ -5,3 +5,5 @@ class DataServer:
         return psutil.virtual_memory()
     def GetData(self):
         return self.__GetMemoryInfo().percent
+
+# ...
