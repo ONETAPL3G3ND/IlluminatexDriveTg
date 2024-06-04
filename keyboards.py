@@ -6,3 +6,5 @@ def Start():
     global StartKeyBoards
     StartKey = KeyboardButton(text="Start", web_app=WebAppInfo(url=WebAppUrl))
     StartKeyBoards = ReplyKeyboardMarkup(keyboard=[[StartKey]], resize_keyboard=True)
+
+# ...
